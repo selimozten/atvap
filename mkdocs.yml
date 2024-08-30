@@ -1,0 +1,30 @@
+site_name: ATVaP
+theme:
+  name: 'material'
+  palette:
+    primary: 'black'
+    accent: 'grey'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  logo: 'assets/logo.png'
+  favicon: 'assets/logo.ico'
+markdown_extensions:
+  - toc:
+      permalink: true
+  - tables
+  - admonition
+  - codehilite
+  - footnotes
+nav:
+  - Home: index.md
+  - Overview: overview.md
+  - Data Processing: data_processing.md
+  - LSTM Model: lstm_model.md
+  - Installation: installation.md
+  - Usage: usage.md
+  - Features: features.md
+  - Project Structure: project-structure.md
+  - Contributing: contributing.md
+  - Testing: testing.md
+  - Support: support.md
