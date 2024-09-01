@@ -1,4 +1,5 @@
 site_name: ATVaP
+site_url: https://selimozten.github.io/atvap/
 theme:
   name: 'material'
   palette:

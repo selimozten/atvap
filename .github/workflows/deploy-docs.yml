@@ -23,8 +23,23 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+      - name: Debug Information
+        run: |
+          echo "Current directory:"
+          pwd
+          echo "Directory contents:"
+          ls -R
+          echo "MkDocs version:"
+          mkdocs --version
+      - name: Build site
+        run: mkdocs build --verbose
       - name: Deploy
         run: |
           mkdocs gh-deploy --force
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Check gh-pages branch
+        run: |
+          git checkout gh-pages
+          echo "gh-pages branch contents:"
+          ls -R
