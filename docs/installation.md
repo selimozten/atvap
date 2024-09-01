@@ -20,7 +20,7 @@ Follow these steps to set up the ATVaP project on your local machine.
 
 2. Navigate to the project directory:
    ```
-   cd crypto-volume-analysis
+   cd atvap
    ```
 
 3. Create a virtual environment:
